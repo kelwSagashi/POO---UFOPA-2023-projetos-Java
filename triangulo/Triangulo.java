@@ -9,7 +9,7 @@ public class Triangulo {
         this.b = b;
         this.c = c;
     } 
-
+    
     public void setA(Double a){
         this.a = a;
     }
