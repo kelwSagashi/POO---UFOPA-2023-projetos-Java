@@ -83,7 +83,7 @@ Let's break down what some parts of this code mean:
 - ```String[] args``` is an array of String objects that holds any command-line arguments passed to the program.
 
 ## Constructor
-The constructor methods help in the construction of the object where to define the attributes of the object/class.
+The constructor methods help in the construction of the object. This is where the object/class attributes are defined.
 
 In java, the constructor is done like this:
 
