@@ -1,3 +1,4 @@
+package Generate_billet;
 import java.util.Scanner;
 
 public class MainProject{ 
@@ -12,6 +13,7 @@ public class MainProject{
             System.out.println("\nProduct " + (i + 1) + " ");
             System.out.print("Name: ");
             String name = scan.next();
+            name += scan.nextLine();
             System.out.print("Price: ");
             float price = scan.nextFloat();
             System.out.print("quantity: ");
@@ -25,7 +27,7 @@ public class MainProject{
             if(n.equals("n")){
                 break;
             }
-        } while(n != "n");
+        } while(!n.equals("n"));
         
         //#region generate Billet;
         Billet billet = new Billet();
@@ -35,6 +37,7 @@ public class MainProject{
             billet.calculateTotal(sale.getTotalProduct(j));
         }
         billet.totals();
+        billet.jump(4);
         //#endregion
 
         scan.close();

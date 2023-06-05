@@ -1,3 +1,4 @@
+package Generate_billet;
 public class Product {
     private String name;
     private float unitPrice;
@@ -23,7 +24,10 @@ public class Product {
     }
 
     public String getName(){
-        return this.name;
+        if (this.name.contains(" ")){
+            return this.name.replace(" ", "_");
+        }
+        return this.name + "\t";
     }
 
     public float getUnitPrice(){

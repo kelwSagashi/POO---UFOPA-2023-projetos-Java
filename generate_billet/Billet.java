@@ -1,3 +1,4 @@
+package Generate_billet;
 import java.time.LocalTime;
 import java.time.LocalDate;
 public class Billet {
@@ -11,7 +12,7 @@ public class Billet {
         System.out.println("Company X");
         System.out.println("\nDate: " + data.getDayOfMonth() + "/" + data.getMonthValue() + "/" + data.getYear());
         System.out.println("Hour: " + time.getHour() + ":" + time.getMinute());
-        System.out.println("\nProduct\t\tQuantity\tUnitPrice\tValue");
+        System.out.println("\nProduct\t\t\tQuantity\tUnitPrice\tValue");
     }
     public void createBillet(String itemName, int quantity, float UnitPrice, float price){
         System.out.println(itemName + "\t\t" + quantity + "\t\t$ " + UnitPrice + "\t\t$ " + price);
@@ -19,7 +20,11 @@ public class Billet {
     public void calculateTotal(float total){
         this.total += total;
     }
-
+    public void jump(int n){
+        for (int i = 0; i < n; i++){
+            System.out.println("\n");
+        }
+    }
     public void totals(){
         System.out.println("\nTotal: $ " + this.total);
 

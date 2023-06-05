@@ -1,3 +1,4 @@
+package Triangle;
 public class Main {
     public static void main(String[] args) {
         Triangulo A = new Triangulo(3.0, 4.0, 5.0);
